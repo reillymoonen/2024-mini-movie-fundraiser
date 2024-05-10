@@ -5,8 +5,8 @@ def num_check(question):
     while True:
 
         try:
-            responce = int(input(question))
-            return responce
+            response = int(input(question))
+            return response
 
         except ValueError:
             print("please enter am integer")
