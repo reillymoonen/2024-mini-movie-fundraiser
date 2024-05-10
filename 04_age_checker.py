@@ -1,0 +1,38 @@
+# functions go here
+
+# checks users enter an integer to a given question
+def num_check(question):
+    while True:
+
+        try:
+            responce = int(input(question))
+            return responce
+
+        except ValueError:
+            print("please enter am integer")
+
+
+# Main routine goes here
+tickets_sold = 0
+
+while True:
+
+    name = input("Enter your name / xxx to quit: ")
+
+    if name == "xxx":
+        break
+
+    age = int(input("Age: "))
+
+    if 12 <= age <= 120:
+        pass
+    elif age < 12:
+        print("Sorry you are too young for this movie")
+        continue
+    else:
+        print("?? That looks like a type, please try again.")
+        continue
+
+    tickets_sold += 1
+
+print("You have sold {} tickets".format(tickets_sold))
