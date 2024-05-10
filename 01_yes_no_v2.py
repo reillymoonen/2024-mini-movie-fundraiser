@@ -13,12 +13,13 @@ def yes_no(question):
         else:
             print("PLease enter yes or no")
 
+
 # main routine goes here
+while True:
+    want_instructions = yes_no("Do you want to read the instructions? ")
 
+    if want_instructions == "yes":
+        print("Instructions go here")
 
-want_instructions = yes_no("Do you want to read the instructions? ")
-
-if want_instructions == "yes":
-    print("Instructions go here")
-
-print("we are done")
+    print("program continues...")
+    print()
