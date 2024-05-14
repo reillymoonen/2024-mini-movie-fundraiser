@@ -22,7 +22,7 @@ while True:
     if name == "xxx":
         break
 
-    age = int(input("Age: "))
+    age = num_check("Age: ")
 
     if 12 <= age <= 120:
         pass
