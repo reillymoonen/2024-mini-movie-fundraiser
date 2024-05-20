@@ -10,6 +10,7 @@ def encrypt(message, key):
             encrypted += char
     return encrypted
 
+
 def decrypt(encrypted_message, key):
     decrypted = ""
     for char in encrypted_message:
@@ -22,6 +23,7 @@ def decrypt(encrypted_message, key):
             decrypted += char
     return decrypted
 
+
 def main():
     message = input("Enter the message: ")
     key = int(input("Enter the key (0-25): "))
@@ -31,6 +33,7 @@ def main():
 
     decrypted_message = decrypt(encrypted_message, key)
     print("Decrypted message:", decrypted_message)
+
 
 if __name__ == "__main__":
     main()
