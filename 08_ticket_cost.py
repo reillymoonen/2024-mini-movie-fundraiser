@@ -1,6 +1,10 @@
 # Next Steps
 # Add currency formatting & Headings
 # integrate this component with the base component
+# Show students that they can use comments at the top
+# of a component at the # end of a period so that they
+# know what they got and what they need to do next
+# add this idea to the last discussion slide!
 
 # PS: In base component remember to calculate surcharge
 # once payment method has been chosen!!
