@@ -2,9 +2,9 @@ import pandas
 import random
 
 # Lists to hold ticket details
-all_names = []
-all_ticket_costs = []
-all_surcharge = []
+all_names = ["a", "b", "c", "d", "e"]
+all_ticket_costs = [7.50, 7.50, 10.50, 10.50, 6.50]
+all_surcharge = [0, 0, 0.53, 0.53, 0]
 
 mini_movie_dict = {
     "Name": all_names,
