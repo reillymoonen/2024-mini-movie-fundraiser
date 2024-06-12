@@ -2,6 +2,7 @@ import pandas as pd
 import random
 from datetime import date
 
+
 # functions go here
 
 
@@ -104,6 +105,9 @@ print()
 # Loop to sell tickets
 while tickets_sold < MAX_TICKETS:
     name = not_blank("Enter your name (or 'xxx' to quit): ")
+
+    # exit loop if users type 'xxx' and have sold at least
+    # one ticket
     if name == 'xxx' and len(all_names) > 0:
         break
     elif name == 'xxx':
@@ -200,7 +204,7 @@ day = today.strftime("%d")
 month = today.strftime("%m")
 year = today.strftime("%Y")
 
-heading = "---- Mini Movie Fundraiser Ticket Data ({}/{}/{}) ----\n".format(day, month, year)
+heading = "\n---- Mini Movie Fundraiser Ticket Data ({}/{}/{}) ----\n".format(day, month, year)
 filename = "MMF_{}_{}_{}".format(year, month, day)
 
 # Change frame to a string so that we can export it to file
@@ -211,13 +215,17 @@ ticket_cost_heading = "\n----- Ticket Cost / Profit -----"
 total_ticket_sales = "Total Ticket Sales: ${}".format(total)
 total_profit = "Total Profit : ${}".format(profit)
 
-# edit text below!! It needs towork if we have unsold tickets
-sales_status = "\n*** All the tickets have been sold ***"
+# show users how many tickets have been sold
+if tickets_sold == MAX_TICKETS:
+    sales_status = "\n*** All the tickets have been sold ***"
+else:
+    sales_status = "\n **** You have sold {} out of {} " \
+                   "tickets *****".format(tickets_sold, MAX_TICKETS)
 
 winner_heading = "\n----- Raffle Winner -----"
 winner_text = "The winner of the raffle is {}. " \
-                 "They have won ${}. ie: Their ticket is " \
-                 "free!".format(winner_name, total_won)
+              "They have won ${:.2f}. ie: Their ticket is " \
+              "free!".format(winner_name, total_won)
 
 # list holding content to print / write to file
 to_write = [heading, mini_movie_string, ticket_cost_heading,
