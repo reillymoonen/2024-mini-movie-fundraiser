@@ -212,8 +212,8 @@ mini_movie_string = pd.DataFrame.to_string(mini_movie_frame)
 
 # create strings for printing....
 ticket_cost_heading = "\n----- Ticket Cost / Profit -----"
-total_ticket_sales = "Total Ticket Sales: ${}".format(total)
-total_profit = "Total Profit : ${}".format(profit)
+total_ticket_sales = "Total Ticket Sales: ${:.2f}".format(total)
+total_profit = "Total Profit : ${:.2f}".format(profit)
 
 # show users how many tickets have been sold
 if tickets_sold == MAX_TICKETS:
