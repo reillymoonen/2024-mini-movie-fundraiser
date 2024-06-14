@@ -1,0 +1,16 @@
+
+---- Mini Movie Fundraiser Ticket Data (14/06/2024) ----
+
+      Ticket Price  Surcharge  Total  Profit
+Name                                        
+rfew          10.5          0   10.5     5.5
+xx             7.5          0    7.5     2.5
+
+----- Ticket Cost / Profit -----
+Total Ticket Sales: $18.00
+Total Profit : $8.00
+
+ **** You have sold 2 out of 5 tickets *****
+
+----- Raffle Winner -----
+The winner of the raffle is rfew. They have won $10.50. ie: Their ticket is free!
